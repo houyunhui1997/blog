@@ -3,9 +3,10 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/article-sort.pug
   #archive
-
-
     - const archiveLength = findArchiveLength(fragment_cache)
+     #posts-chart(data-start="2023-06" style="height: 300px; padding: 10px;")
     .article-sort-title= _p('page.articles') + ' - ' + archiveLength
     +articleSort(page.posts)
+   
     include includes/pagination.pug
+  

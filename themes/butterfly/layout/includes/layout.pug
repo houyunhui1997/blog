@@ -22,6 +22,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     - var DarkmodeBg = page.darkmodebg ? page.darkmodebg : DDMBg
     if theme.background
       //- #web_bg
+      #an_music_bg
       if page.background
         #web_bg(style=`background:`+ page.background + `;background-attachment: local;background-position: center;background-size: cover;background-repeat: no-repeat;`)
       else
@@ -85,6 +86,8 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       include ./404.pug
 
     include ./rightside.pug
+    
     !=partial('includes/third-party/search/index', {}, {cache: true})
+    include ./music.pug
     !=partial('includes/rightmenu',{}, {cache:true})
     include ./additional-js.pug

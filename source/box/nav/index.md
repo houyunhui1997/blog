@@ -15,4 +15,7 @@ comments: false
 
 {% sitegroup %}
 {% site  在线工具-你的工具箱, url=https://tool.lu/, screenshot=https://source.fomal.cc/siteshot/tool.lu.jpg, avatar=https://tool.lu/favicon.ico, description=另一个拥有很多工具的网站 %}
+{% site  图片去底色, url=https://tools.kalvinbg.cn/image/bgRemover, screenshot=https://tuchuang.voooe.cn/images/2024/05/20/image32b5dc849405dd46.png, avatar=https://tools.kalvinbg.cn/static/favicon.ico, description=在线图片去底色工具 %}
+{% site  上传与分享您的照片, url=https://tuchuang.voooe.cn/, screenshot=https://tuchuang.voooe.cn/images/2024/05/20/image16bd597403666e6d.png, avatar=https://tuchuang.voooe.cn/content/images/system/default/favicon.png, description=任意拖放图片到这里, 即开始上传您的图片 %}
+{% site  图片在线转svg, url=https://www.bejson.com/convert/image_to_svg/, screenshot=https://tuchuang.voooe.cn/images/2024/05/23/image.png, avatar=https://www.bejson.com/static/bejson/img/logo.png, description=图片在线转svg %}
 {% endsitegroup %}

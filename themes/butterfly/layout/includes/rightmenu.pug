@@ -24,9 +24,9 @@
             i.fa.fa-copy
             span='粘贴'
     .rightMenu-group.rightMenu-line.hide#menu-post
-        a.rightMenu-item(href="#post-comment")
-            i.fas.fa-comment
-            span='空降评论'
+        //- a.rightMenu-item(href="#post-comment")
+        //-     i.fas.fa-comment
+        //-     span='空降评论'
         a.rightMenu-item(href="javascript:rmf.copyWordsLink()")
             i.fa.fa-link
             span='复制本文地址'
@@ -73,4 +73,12 @@
         a.rightMenu-item(href="javascript:window.print();")
             i.fa-solid.fa-print
             span='打印页面'
-
+        a.rightMenu-item(href="javascript:rmf.startMusic();")
+            i.fas.fa-play
+            span='播放音乐'
+        a.rightMenu-item(href="javascript:rmf.musicSkipBack();")
+            i.fas.fa-fast-backward
+            span='切换到上一首'
+        a.rightMenu-item(href="javascript:rmf.musicSkipForward();")
+            i.fas.fa-fast-forward
+            span='切换到下一首'

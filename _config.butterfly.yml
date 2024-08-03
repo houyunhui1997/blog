@@ -6,8 +6,8 @@ menu:
   首页: / || icon-home || faa-tada
   文章 || icon--article || faa-tada || hide:
     总览: /archives/ || icon-guidang1 || faa-tada
+    分类: /categories/ || icon-fenlei || faa-tada
     标签: /tags/ || icon-sekuaibiaoqian || faa-tada
-    # 分类: /categories/ || icon-fenlei || faa-tada
   休闲 || icon-pinweishenghuo || faa-tada || hide:
     音乐: /life/music/ ||icon-yinle || faa-tada
     电影: /life/movies/ ||icon-dianying1 || faa-tada
@@ -25,7 +25,8 @@ menu:
   #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
   #   旧时光: /site/time/ || icon-xianxingshalou || faa-tada
   个人 || icon-maoliang || faa-tada || hide:
-    唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
+    独自唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
+    相册: /personal/photo/ || icon-tubiaozhizuomoban || faa-tada
     恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
     关于: /personal/about/ || icon-paperplane || faa-tada
 
@@ -681,8 +682,8 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - "要有最朴素的生活，与最远大的梦想。"
-    - "即使明日天寒地冻，路远马亡"
+    - "往事随风，热爱可抵岁月漫长"
+    - "不负每一份热爱，愿岁月温柔以待"
 
 # Loading Animation (加載動畫)
 # preloader: false
@@ -744,7 +745,7 @@ aside:
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
   card_weibo:
-    enable: false
+    enable: true
   card_friend_link: #友链通讯录
     enable: false
     sort_order: # Don't modify the setting unless you know
@@ -860,7 +861,7 @@ pjax:
 # Inject the css and script (aplayer/meting)
 aplayerInject:
   enable: true
-  per_page: false
+  per_page: true
 
 
 # Snackbar (Toast Notification 彈窗)
@@ -915,8 +916,11 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    # 音乐播放器css
+    - <link rel="stylesheet" href="/css/music.css?1">
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script> # 引入图表
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
@@ -939,10 +943,13 @@ inject:
     - <script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script> # js图标引入2
     - <script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script> # js图标引入3
     - <script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
+    - <script async data-pjax src="/js/anzhiyu.js"></script> # 音乐js
+    - <script async data-pjax src="/js/anzhiyufunction.js"></script> # 音乐js
+    - <script async src="/js/anzhiyuOnlyOne.js"></script> # 音乐js
     - <canvas id="universe"></canvas> # 星空画布
     - <canvas id="snow"></canvas> # 雪花画布
     - <script defer src="/js/fomal.js"></script> # 主模块js
-    - <div class="aplayer no-destroy" data-id="9534592121" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <div class="aplayer no-destroy" data-id="" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -964,7 +971,7 @@ CDN:
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
-
+  card_weibo: /js/card_weibo.js
   option:
     # main_css:
     # main:
@@ -972,6 +979,7 @@ CDN:
     # translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search:
     # algolia_js:
+    
     algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
     instantsearch_v4: https://cdn.staticfile.org/instantsearch.js/4.49.2/instantsearch.production.min.js
     pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
@@ -1010,8 +1018,8 @@ CDN:
     # flickr_justified_gallery_js: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.js
     # flickr_justified_gallery_css: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.css
     aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
-    aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
-    meting_js: https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js
+    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js
     # prismjs_js: https://cdn1.tianli0.top/npm/prismjs@1.1.0/prism.js
     # prismjs_lineNumber_js: https://cdn1.tianli0.top/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
     # prismjs_autoloader: https://cdn1.tianli0.top/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
