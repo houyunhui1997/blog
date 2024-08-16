@@ -7,7 +7,7 @@ menu:
   文章 || icon--article || faa-tada || hide:
     总览: /archives/ || icon-guidang1 || faa-tada
     分类: /categories/ || icon-fenlei || faa-tada
-    标签: /tags/ || icon-sekuaibiaoqian || faa-tada
+    # 标签: /tags/ || icon-sekuaibiaoqian || faa-tada
   休闲 || icon-pinweishenghuo || faa-tada || hide:
     音乐: /life/music/ ||icon-yinle || faa-tada
     电影: /life/movies/ ||icon-dianying1 || faa-tada
