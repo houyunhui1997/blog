@@ -33,7 +33,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-# 指定不渲染某些页面
+# 指定不渲染某些页面，1
 skip_render: 
 
 # Writing
