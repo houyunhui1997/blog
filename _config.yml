@@ -281,12 +281,6 @@ magnet:
     - name: ES6
       display_name: ES6
       icon: 🍟
-    # - name: 数据库
-    #   display_name: 小Fの数据库笔记
-    #   icon: 🍨
-    # - name: 演示
-    #   display_name: 小Fの案例演示笔记
-    #   icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色
     text_hover_color: white # 文字鼠标悬浮颜色
@@ -318,7 +312,7 @@ live2d:
     # use: ./wives/wanko # 相对于博客根目录的路径
     # use: https://npm.elemecdn.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
   display:
-    position: right #控制看板娘位置
+    position: left #控制看板娘位置
     width: 150 #控制看板娘大小
     height: 300 #控制看板娘大1小
   mobile:
