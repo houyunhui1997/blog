@@ -8,10 +8,10 @@ menu:
     总览: /archives/ || icon-guidang1 || faa-tada
     分类: /categories/ || icon-fenlei || faa-tada
     # 标签: /tags/ || icon-sekuaibiaoqian || faa-tada
-  休闲 || icon-pinweishenghuo || faa-tada || hide:
-    音乐: /life/music/ ||icon-yinle || faa-tada
-    电影: /life/movies/ ||icon-dianying1 || faa-tada
-    游戏: /life/games/ || icon-youxishoubing || faa-tada
+  休闲: /life/music/ || icon-pinweishenghuo || faa-tada || hide
+    # 音乐: /life/music/ ||icon-yinle || faa-tada
+    # 电影: /life/movies/ ||icon-dianying1 || faa-tada
+    # 游戏: /life/games/ || icon-youxishoubing || faa-tada
   八宝箱 || icon-xiangzi || faa-tada || hide:
     # 壁纸: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
     动画: /box/animation/ || icon-nvwumao || faa-tada
@@ -24,11 +24,11 @@ menu:
   #   网站统计: /site/census/ || icon--tongjibiao || faa-tada
   #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
   #   旧时光: /site/time/ || icon-xianxingshalou || faa-tada
-  个人 || icon-maoliang || faa-tada || hide:
+  个人: /personal/about/ || icon-maoliang || faa-tada || hide
     # 独自唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
-    相册: /personal/photo/ || icon-tubiaozhizuomoban || faa-tada
-    恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
-    关于: /personal/about/ || icon-paperplane || faa-tada
+    # 相册: /personal/photo/ || icon-tubiaozhizuomoban || faa-tada
+    # 恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
+    # 关于: /personal/about/ || icon-paperplane || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------
